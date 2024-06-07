@@ -130,7 +130,7 @@ o3d.visualization.draw_geometries([pcd])
 
 ## 5. 데이터를 효율적으로 불러오는 방법
 
-<img src="https://user-images.githubusercontent.com/71424677/rgb1.png" />
+<img src="https://github.com/bloodmage1/3D_image_processing/blob/main/img/rgb1.png" />
 
 데이터의 크기가 상당히 크기 때문에 데이터의 점의 개수를 선택해서 불러올 수 있다. 그렇게 하면 나중에 전처리 할 때에, 메모리를 효율적으로 사용할 수 있다.
 
@@ -143,21 +143,21 @@ pcd = mesh.sample_points_uniformly(number_of_points = 500)
 o3d.visualization.draw_geometries([pcd])
 ```
 
-<img src="https://user-images.githubusercontent.com/71424677/rgb_scatter.png" />
+<img src="https://github.com/bloodmage1/3D_image_processing/blob/main/img/rgb_scatter.png" />
 
 
 
 ## 6. 3D IMAGE로 만드는 방법
 
-<img src="https://user-images.githubusercontent.com/71424677/Cup_pictures.png" />
-<img src="https://user-images.githubusercontent.com/71424677/Cup_pictures2.png" />
+<img src="https://github.com/bloodmage1/3D_image_processing/blob/main/img/Cup_pictures.png" />
+<img src="https://github.com/bloodmage1/3D_image_processing/blob/main/img/Cup_pictures2.png" />
 두 사진은 휴지곽 위에 컵을 올려 둔 사진이다(직접 찍음).
 
 1. 매칭을 위한 파라미터 설정(여기서 distance_ratio, tol이 중요)
 2. ransac 함수와 rigid_transform_3D 함수 정의
 3. SIFT를 사용한 특징점 매칭 및 3D 변환 계산
 
-<img src="https://user-images.githubusercontent.com/71424677/Cup_merge.png" />
+<img src="https://github.com/bloodmage1/3D_image_processing/blob/main/img/Cup_merge.png" />
 
 
 
