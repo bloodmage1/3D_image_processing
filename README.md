@@ -145,7 +145,7 @@ o3d.visualization.draw_geometries([pcd])
 
 <img src="https://github.com/bloodmage1/3D_image_processing/blob/main/img/rgb_scatter.png" />
 
-
+위 사진은 데이터에서 500개의 점만 추출하여 화면에 뿌린 것이다.
 
 ## 6. 3D IMAGE로 만드는 방법
 
@@ -153,14 +153,15 @@ o3d.visualization.draw_geometries([pcd])
 <img src="https://github.com/bloodmage1/3D_image_processing/blob/main/img/Cup_pictures2.png" />
 두 사진은 휴지곽 위에 컵을 올려 둔 사진이다(직접 찍음).
 
-1. 매칭을 위한 파라미터 설정(여기서 distance_ratio, tol이 중요)
-2. ransac 함수와 rigid_transform_3D 함수 정의
-3. SIFT를 사용한 특징점 매칭 및 3D 변환 계산
+1. 먼저 데이터의 배경을 제거
+2. 매칭을 위한 파라미터 설정(여기서 distance_ratio, tol이 중요)
+3. ransac 함수와 rigid_transform_3D 함수 정의
+4. SIFT를 사용한 특징점 매칭 및 3D 변환 계산
 
 <img src="https://github.com/bloodmage1/3D_image_processing/blob/main/img/Cup_merge.png" />
 
 
-
+위 데이터는 두 사진에서 비슷한 부분을 찾는 과정이다. 참고로 휴지곽은 컵으로 인해서 생기는 그림자를 제거하기 위해 설치
 
 
 
